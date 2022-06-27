@@ -1,0 +1,186 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Menghitung IPK</title>
+<style>
+	body {
+		font-family: sans-serif;
+		margin: 10%
+	}
+</style>
+<link rel="stylesheet" href="bootstrap.min.css"  >
+</head>
+<body>
+<div class="container">
+        <h1 align="center"><u><b>Kartu Hasil Semester 1</b></u></h1>
+        <hr>
+        <p class="text-green" align="center"><i>
+            Nama : Putri Ajeng Larasamanah <br>
+            NIM : 20210121017 <br>
+            Prodi : Sistem Informasi 1/2</i>
+        </p>
+        <div class="row">
+            <div class="col col-7" >
+                <table class="table table-primary table-hover">
+                	<tr>
+                		<th bgcolor="aqua">MataKuliah</th>
+                	</tr>
+                		<script>
+                			var mataKuliah = ["General English","Sistem dan Tekhnologi Informasi","Algoritma dan Pemrograman","Pancasila dan Kewarganegaraan","Matematika Bisnis","Managemen dan Organisasi","Pembangunan Karakter dan Etika Profesi"];
+                			for (let m = 0; m < mataKuliah.length; m++) {
+		                        document.writeln("<tr><th>" + mataKuliah[m] + "</td></tr>");
+		                    }
+                		</script>
+                </table>
+            </div>
+            <div class="col">
+                <table class="table table-primary table-hover">	
+                	<tr>
+                		<th bgcolor="aqua">UTS</th>
+                
+		                <script>
+		                    var utsAjeng = [85, 90, 85, 81, 85, 90, 50];
+
+		                    for (let x = 0; x < utsAjeng.length; x++) {
+		                        document.writeln("<tr><th>" + utsAjeng[x] + "</th></tr>");
+		                    }
+		                </script>
+                	</tr>
+                </table>
+            </div>
+            <div class="col">
+                <table class="table table-primary table-hover">
+	               <tr>	
+	               <th bgcolor="aqua">Uas</th> 	
+	                <script>
+	                    var uasAjeng = [90, 90, 80, 88, 90, 85, 90];
+
+	                    for (let z = 0; z < uasAjeng.length; z++) {
+	                        document.writeln("<tr><th>" + uasAjeng[z] + "</th></tr>");
+	                    }
+	                </script>
+	            	</tr>
+	        	</table>
+            </div>
+            <div class="col">
+                <table class="table table-primary table-hover">
+                	<tr>
+                		<th bgcolor="aqua">Absensi</th>
+		                <script>
+		                    var absen = [100, 100, 100, 100, 100, 100, 100];
+
+		                    for (let i = 0; i < absen.length; i++) {
+		                        document.writeln("<tr><th>" + absen[i] + " %</th></tr>");
+		                    }
+		                </script>
+                	</tr>
+                </table>
+            </div>
+            <div class="col ">
+                <table class="table table-primary table-hover">
+                	<tr bgcolor="aqua">	
+                		<th>Nilai</th>
+                <script>
+                    var english = utsAjeng[0] * 0.35 + uasAjeng[0] * 0.35 + absen[0] * 0.2;
+                    if (english >= 80 && english <= 100) {
+                        document.writeln("<tr><th><b>A</b></th></tr>");
+                    } else if (english >= 70 && english <=80) {
+                        document.writeln("<tr><th><b>B</b></th></tr>");
+                    } else if (english >= 60 && english <= 70) {
+                        document.writeln("<tr><th><b>C</b></th></tr>");
+                    } else {
+                        document.writeln("<tr><th><b>D</b></th></tr>");
+                    }
+
+                    var sistemTekhnologi = utsAjeng[1] * 0.35 + uasAjeng[1] * 0.35 + absen[1] * 0.2;
+                     if (sistemTekhnologi >= 80 && sistemTekhnologi <= 100) {
+                        document.writeln("<tr><th><b>A</b></th></tr>");
+                    } else if (sistemTekhnologi >= 70 && sistemTekhnologi <=80) {
+                        document.writeln("<tr><th><b>B</b></th></tr>");
+                    } else if (sistemTekhnologi >= 60 && sistemTekhnologi <= 70) {
+                        document.writeln("<tr><th><b>C</b></th></tr>");
+                    } else {
+                        document.writeln("<tr><th><b>D</b></th></tr>");
+                    }
+
+
+                    var algoritmaPemrograman = utsAjeng[2] * 0.35 + uasAjeng[2] * 0.35 + absen[2] * 0.2;
+                     if (english >= 80 && english <= 100) {
+                        document.writeln("<tr><th><b>A</b></th></tr>");
+                    } else if (english >= 70 && english <=80) {
+                        document.writeln("<tr><th><b>B</b></th></tr>");
+                    } else if (english >= 60 && english <= 70) {
+                        document.writeln("<tr><th><b>C</b></th></tr>");
+                    } else {
+                        document.writeln("<tr><th><b>D</b></th></tr>");
+                    }
+
+
+                    var pancasila = utsAjeng[3] * 0.35 + uasAjeng[3] * 0.35 + absen[3] * 0.2;
+                     if (pancasila >= 80 && pancasila <= 100) {
+                        document.writeln("<tr><th><b>A</b></th></tr>");
+                    } else if (pancasila >= 70 && pancasila <=80) {
+                        document.writeln("<tr><th><b>B</b></th></tr>");
+                    } else if (pancasila >= 60 && pancasila <= 70) {
+                        document.writeln("<tr><th><b>C</b></th></tr>");
+                    } else {
+                        document.writeln("<tr><th><b>D</b></th></tr>");
+                    }
+
+
+                    var matbis = utsAjeng[4] * 0.35 + uasAjeng[4] * 0.35 + absen[4] * 0.2;
+                     if (matbis >= 80 && matbis <= 100) {
+                        document.writeln("<tr><th><b>A</b></th></tr>");
+                    } else if (matbis >= 70 && matbis <=80) {
+                        document.writeln("<tr><th><b>B</b></th></tr>");
+                    } else if (matbis >= 60 && matbis <= 70) {
+                        document.writeln("<tr><th><b>C</b></th></tr>");
+                    } else {
+                        document.writeln("<tr><th><b>D</b></th></tr>");
+                    }
+
+                    var manajemenOrganisasi = utsAjeng[5] * 0.35 + uasAjeng[5] * 0.35 + absen[5] * 0.2;
+                     if (manajemenOrganisasi >= 80 && manajemenOrganisasi <= 100) {
+                        document.writeln("<tr><th><b>A</b></th></tr>");
+                    } else if (manajemenOrganisasi >= 70 && manajemenOrganisasi <=80) {
+                        document.writeln("<tr><th><b>B</b></th></tr>");
+                    } else if (manajemenOrganisasi >= 60 && manajemenOrganisasi <= 70) {
+                        document.writeln("<tr><th><b>C</b></th></tr>");
+                    } else {
+                        document.writeln("<tr><th><b>D</b></th></tr>");
+                    }
+
+                    var pembangunanEtika = utsAjeng[6] * 0.35 + uasAjeng[6] * 0.35 + absen[6] * 0.2;
+                     if (pembangunanEtika >= 80 && pembangunanEtika <= 100) {
+                        document.writeln("<tr><th><b>A</b></th></tr>");
+                    } else if (pembangunanEtika >= 70 && pembangunanEtika <=80) {
+                        document.writeln("<tr><th><b>B</b></th></tr>");
+                    } else if (pembangunanEtika >= 60 && pembangunanEtika <= 70) {
+                        document.writeln("<tr><th><b>C</b></th></tr>");
+                    } else {
+                        document.writeln("<tr><th><b>D</b></th></tr>");
+                    }
+
+                </script>
+            		</tr>
+        </table>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            
+            
+                <script>
+                    document.writeln("<b>IPK : </b> " );
+                    var totalipk = (english + sistemTekhnologi + algoritmaPemrograman + pancasila + matbis + manajemenOrganisasi + pembangunanEtika) / 175;
+                    document.writeln("<b>"+ totalipk.toFixed(2) +"</b>" );
+                    
+                </script>
+            	</tr>
+            </div>
+        </div>
+    </div>
+</body>
+</table>
+</body>
+</html>
